@@ -78,11 +78,11 @@ resource "azurerm_linux_virtual_machine" "vm_devops" {
     admin_password = var.password
 
     source_image_reference {
-        publisher = "Canonical"
-        offer = "UbuntuServer"
-        sku = "16.04-LTS"
-        version = "latest"
-    }
+    publisher = "Canonical"
+    offer     = "ubuntu-24_04-lts"
+    sku       = "server"
+    version   = "latest"
+  }
 
 
     os_disk {
